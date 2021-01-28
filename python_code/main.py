@@ -1,13 +1,14 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
 
-location = input("Location:") # Location to be monitored
-location_population = float(input("Population (in thousands):"))*1000 # Population of the location
+location = input("Location: ") # Location to be monitored
+location_population = float(input("Population (in thousands): "))*1000 # Population of the location
 limit_a = (0.88,15) #(Percentile of people no longer infectious,days since symptoms)
 limit_b = (0.95,20) 
 people_day=float(input("People you meet in a day:"))#People you meet in a day
 
-given_period=1
+given_period=30
 #Creating and filtering Dataframes
 df=pd.read_csv("data.csv")
 df2=df[['location_name','date','est_infections_mean']]
