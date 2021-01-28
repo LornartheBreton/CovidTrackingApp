@@ -3,9 +3,8 @@ import matplotlib.pyplot as plt
 
 location = input("Location:") # Location to be monitored
 location_population = float(input("Population (in thousands):"))*1000 # Population of the location
-limit_a = (0.88,10) #(Percentile of people no longer infectious,days since symptoms)
-limit_b = (0.95,15) 
-
+limit_a = (0.88,15) #(Percentile of people no longer infectious,days since symptoms)
+limit_b = (0.95,20) 
 people_day=float(input("People you meet in a day:"))#People you meet in a day
 
 given_period=1
