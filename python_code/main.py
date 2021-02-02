@@ -27,5 +27,6 @@ df2['contagion_vectors']=most_recent+contagion_a+contagion_b
 df2['contagion_probability']=(df2['contagion_vectors']/df2['population']
                             *people_day*given_period)
 
-print(df2[df2.date==today]['contagion_probability'])
+ans = df2[df2.date==today]['contagion_probability'].values[0]
+print(ans)
 
