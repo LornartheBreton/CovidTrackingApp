@@ -1,9 +1,7 @@
 import pandas as pd
 from datetime import datetime
 import matplotlib.pyplot as plt
-import os
-import firebase_admin
-from firebase_admin import db,storage,credentials,firestore
+#import os
 import json
 
 #The code below was used to test the formula locally
